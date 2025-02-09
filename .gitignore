@@ -1,2 +1,2 @@
 *.env.json
-.gitignore
+__pycache__/
