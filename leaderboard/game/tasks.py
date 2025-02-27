@@ -49,6 +49,8 @@ def calculate_game_popularity():
         .aggregate(Max('count'))['count__max'] or 1,
         1
     )
+
+    print(max_daily_players, max_concurrent_players, max_upvotes, max_session_length, max_daily_sessions)
     
     # Calculate popularity for each game
     for game in Game.objects.all():
