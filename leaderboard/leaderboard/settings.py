@@ -19,7 +19,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = credentials.get('DJANGO_SECRET_KEY', 'your-secret-key')
 DEBUG = credentials.get('debug', False)
-ALLOWED_HOSTS = credentials.get('ALLOWED_HOSTS', ["*"])
+ALLOWED_HOSTS = credentials.get('ALLOWED_HOSTS',"*")
 APP_ENV = credentials.get('app_env', None)
 print("Running server with on env -", APP_ENV)
 
